@@ -1,7 +1,7 @@
 <?php
 // Exemple d'utilisation :
 // Vous devez aussi configurer MastoPHP.php
-// en remplaçant "urn:ietf:wg:oauth:2.0:oob" par "https://votre_site.tld/index_cnx.php" ici, index.php fait référence à ce présent fichier
+// en remplaçant "urn:ietf:wg:oauth:2.0:oob" par "https://votre_site.tld/index_cnx.php" ici, index_cnx.php fait référence à ce présent fichier
 //
 // Votre formulaire initial où vous allez demander le @aka@instance.tld doit renvoyer cette valeur à index_cnx.php?i=@aka@instance.tld
 
