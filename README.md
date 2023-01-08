@@ -87,7 +87,7 @@ Create your object and register your app with the same credentials like above :
 
 ```php
 $MastoPHP = new MastoPHP\MastoPHP('@aka@instance.tld');
-$app = $MastoPHP->registerApp('MastoPHP', 'https://www.stefofficiel.me');
+$app = $MastoPHP->registerApp('YourAppName', 'http://my-website.com');
 ```
 
 ### Register your token
@@ -116,7 +116,7 @@ Create your object and register your app with the same credentials like above :
 
 ```php
 $MastoPHP = new MastoPHP\MastoPHP('@aka@instance.tld');
-$app = $MastoPHP->registerApp('MastoPHP', 'https://www.stefofficiel.me');
+$app = $MastoPHP->registerApp('YourAppName', 'http://my-website.com');
 ```
 
 Now, you can use requests.
@@ -269,8 +269,8 @@ To use them in a new status, specify their IDs in a array like this :
 
 ```php
 // Create Attachments
-$img1 = $app->createAttachement("C:\Users\Max\Pictures\MastoPHP.png");
-$img2 = $app->createAttachement("C:\Users\Max\Pictures\mastodonauth.png");
+$img1 = $app->createAttachement("/home/StefOfficiel/Pictures/MastoPHP.png");
+$img2 = $app->createAttachement("/home/StefOfficiel/Pictures/mastodonauth.png");
 
 // Post the new status with both medias
 $app->postStatus('This is a test with #MastoPHP #PHP', 'public', [$img1['id'], $img2['id']]);
