@@ -12,7 +12,7 @@ if((($_SESSION['akainstance'] == "") || (empty($_SESSION['akainstance']))) && (h
     $_SESSION['akainstance'] = $akainstance;
 }
 
-$full_instance = $_SESSION['akainstance'];
+$akainstance = $_SESSION['akainstance'];
 
 require './mastophp/autoload.php';
 
@@ -62,3 +62,4 @@ header('location: ./index.php');
 //var_dump($app->getStatuses('1629'));
 
 //var_dump($app->getFollowers(1629, ['limit' => 5]));
+}
